@@ -34,4 +34,4 @@ webpack은 브라우저에서 동작하는 것이 아닌 Node.js 환경에서 �
 npm i -D html-webpack-plugin
 ```
 
-webpack.config.js -> plugins 추가
+webpack.config.js -> plugins 추가 -> ```npm run dev```
