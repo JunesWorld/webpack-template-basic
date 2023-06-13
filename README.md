@@ -27,3 +27,11 @@ webpack은 브라우저에서 동작하는 것이 아닌 Node.js 환경에서 �
 ## npm run build
 
 = npm run dev
+
+## 개발 서버 오픈
+
+```bash
+npm i -D html-webpack-plugin
+```
+
+webpack.config.js -> plugins 추가

@@ -2,6 +2,10 @@
 // 절대경로 명시
 const path = require('path')
 
+// 개발 서버 오픈
+// plugins
+const HtmlPlugin = require('html-webpack-plugin')
+
 // export
 module.exports =  {
   // parcel index.html
@@ -22,5 +26,16 @@ module.exports =  {
     // path: path.resolve(__dirname, 'dist'),
     // filename: 'main.js',
     clean: true // 기존에 남아 있던 파일 제거
+  },
+
+  // 번들링 후 결과물의 처리 방식 등 다양한 플러그인들을 설정
+  plugins: [
+    new HtmlPlugin({
+      template: './index.html'
+    })
+  ],
+
+  devServer: {
+    host: 'localhost'
   }
 }
