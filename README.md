@@ -48,3 +48,17 @@ webpack.config.js -> plugins 추가 -> ```npm run dev```
 ## SCSS
 
 ```npm i -D sass-loader sass```
+
+## Autoprefixer
+
+```npm i -D postcss autoprefixer postcss-loader --legacy-peer-deps```
+
+- packag.json
+```
+"browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+```
+
+- .postcssrc.js 파일 생성
