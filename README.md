@@ -1,0 +1,21 @@
+# Webpack-template-basic
+
+## Package Install
+
+```bash
+npm i -D webpack webpack-cli webpack-dev-server@next
+```
+
+package.json
+```
+"scripts": {
+    "dev": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+```
+- dev : 현재 개발 모드
+- build : 제품 모드
+- webpack : bundler가 동작하기 위한 핵심 package
+- webpack-cli : Command Line Interface 지원
+  - parcel은 자동 지원
+- webpack-dev-server : dev를 통해 server를 open 할 때 바로 새로고침하기 위해서 사용
