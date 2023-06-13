@@ -54,11 +54,29 @@ webpack.config.js -> plugins 추가 -> ```npm run dev```
 ```npm i -D postcss autoprefixer postcss-loader --legacy-peer-deps```
 
 - packag.json
-```
-"browserslist": [
-    "> 1%",
-    "last 2 versions"
+  ```
+  "browserslist": [
+     "> 1%",
+     "last 2 versions"
   ]
-```
+  ```
 
 - .postcssrc.js 파일 생성
+
+## babel
+
+```npm i -D @babel/core @babel/preset-env @babel/plugin-transform-runtime```
+
+- .babelrc.js 파일 생성
+
+- webpack.config.js
+  ```
+  {
+        test: /\.js$/,
+        use: [
+          'babel-loader'
+        ]
+      }
+  ```
+
+  ```npm i -D babel-loader```
