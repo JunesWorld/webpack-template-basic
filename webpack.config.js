@@ -6,6 +6,9 @@ const path = require('path')
 // plugins
 const HtmlPlugin = require('html-webpack-plugin')
 
+// Favicon 설정
+const CopyPlugin = require('copy-webpack-plugin')
+
 // export
 module.exports =  {
   // parcel index.html
@@ -32,6 +35,12 @@ module.exports =  {
   plugins: [
     new HtmlPlugin({
       template: './index.html'
+    }),
+    // static 폴더에 있는 것을 복사하여 dist 폴더로 이동
+    new CopyPlugin({
+      patterns: [
+        { from: 'static' }
+      ]
     })
   ],
 
