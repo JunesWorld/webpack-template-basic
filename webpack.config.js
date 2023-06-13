@@ -31,6 +31,19 @@ module.exports =  {
     clean: true // 기존에 남아 있던 파일 제거
   },
 
+  // css 파일 읽게 하기
+  module: {
+    rules: [
+      {
+        test: /\.css$/, // .css 끝나는 것 찾기
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }
+    ]
+  },
+
   // 번들링 후 결과물의 처리 방식 등 다양한 플러그인들을 설정
   plugins: [
     new HtmlPlugin({

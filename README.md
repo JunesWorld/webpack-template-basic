@@ -40,3 +40,7 @@ webpack.config.js -> plugins 추가 -> ```npm run dev```
 ## Favicon 설정(정적 파일 연결)
 
 ```npm i -D copy-webpack-plugin```
+
+## module(CSS파일 읽게 하기)
+
+```npm i -D css-loader style-loader```
