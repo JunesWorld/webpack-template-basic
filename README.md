@@ -26,6 +26,9 @@ webpack은 브라우저에서 동작하는 것이 아닌 Node.js 환경에서 �
 
 ## npm run build
 
+> 개발 서버 오픈 : npm run dev
+> 제품화 : npm run build
+
 컴파일 + 링크 : 분석한 소스코드로 실행 가능한 프로그램을 만듦</br>
 package.json에서 build 스크립트 부분이 실행되고, 여기에 webpack이 있다면 실행되는 원리
 
@@ -80,3 +83,15 @@ webpack.config.js -> plugins 추가 -> ```npm run dev```
   ```
 
   ```npm i -D babel-loader```
+
+## Netify 배포
+
+Login - New site from Git - Github - webpack-template-basic 선택
+
+> 개발 서버 오픈 : npm run dev
+> 제품화 : npm run build
+
+- Build command = npm run build
+- Publish directory = dist/ (변경 시 수정할 것)
+
+Deploy site - 주소 접근
