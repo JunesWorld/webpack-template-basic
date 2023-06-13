@@ -88,10 +88,27 @@ webpack.config.js -> plugins 추가 -> ```npm run dev```
 
 Login - New site from Git - Github - webpack-template-basic 선택
 
-> 개발 서버 오픈 : npm run dev
+> 개발 서버 오픈 : npm run dev</br>
 > 제품화 : npm run build
 
 - Build command = npm run build
 - Publish directory = dist/ (변경 시 수정할 것)
 
 Deploy site - 주소 접근
+
+## NPX, Degit
+
+새로운 Terminal Open
+
+- 경로 확인
+  ```bash
+  ls
+  ```
+- 다운 받기 원하는 경로로 이동
+  ```bash
+  cd [원하는 경로]
+  ```
+- 설치
+  ```bash
+  npx degit [Github 이름]/[다운 받을 폴더 이름] [다운 시 원하는 폴더 이름]
+  ```
