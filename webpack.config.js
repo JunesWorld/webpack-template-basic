@@ -1,0 +1,26 @@
+// import
+// 절대경로 명시
+const path = require('path')
+
+// export
+module.exports =  {
+  // parcel index.html
+  // 파일을 읽어들이기 시작하는 진입점 설정
+  entry: './js/main.js',
+
+  // 결과물(번들)을 반환하는 설정
+  output: {
+    // webpack bundler를 동작시키면 dist에 결과물을 만들어 내어준다.
+    // path는 NodeJS와 같이 절대 경로가 필요하다.
+    // resolve = __dirname(해당 파일 실제 경로를 나타내주는 NodeJS의 전역변수)과 dist를 합쳐준다.(=절대경로)
+    // entry점으로 사용한 main.js를 번들로 합쳐서 내어준다.
+    // dist -> public / main.js -> app.js | npm run build
+    // |- public 폴더에 app.js(내용은 main.js와 같다) 생성
+    // |- 다시 app.js -> main.js | npm run build | app.js 남아 있다. | clean 설정
+
+
+    // path: path.resolve(__dirname, 'dist'),
+    // filename: 'main.js',
+    clean: true // 기존에 남아 있던 파일 제거
+  }
+}

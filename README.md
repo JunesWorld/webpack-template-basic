@@ -19,3 +19,11 @@ package.json
 - webpack-cli : Command Line Interface 지원
   - parcel은 자동 지원
 - webpack-dev-server : dev를 통해 server를 open 할 때 바로 새로고침하기 위해서 사용
+
+## webpack.config.js
+
+webpack은 브라우저에서 동작하는 것이 아닌 Node.js 환경에서 동작한다.
+
+## npm run build
+
+= npm run dev
