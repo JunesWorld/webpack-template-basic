@@ -44,3 +44,7 @@ webpack.config.js -> plugins 추가 -> ```npm run dev```
 ## module(CSS파일 읽게 하기)
 
 ```npm i -D css-loader style-loader```
+
+## SCSS
+
+```npm i -D sass-loader sass```

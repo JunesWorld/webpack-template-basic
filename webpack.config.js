@@ -32,13 +32,15 @@ module.exports =  {
   },
 
   // css 파일 읽게 하기
+  // 순서 중요!
   module: {
     rules: [
       {
-        test: /\.css$/, // .css 끝나는 것 찾기
+        test: /\.s?css$/, // .css 끝나는 것 찾기 | ? = s가 있을 수도 있고 없을수도 있다.
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
+          'sass-loader'
         ]
       }
     ]
